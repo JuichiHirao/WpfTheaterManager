@@ -31,7 +31,8 @@ namespace WpfTheaterManager.service
                 + ", filename, rating1, rating2, status "
                 + ", created_at, updated_at "
                 + "FROM tv.akb48 "
-                + "WHERE member is not null and length(member) > 0";
+                // + "WHERE member is not null and length(member) > 0 "
+                + "ORDER BY created_at DESC ";
 
             MySqlDataReader reader = null;
             try

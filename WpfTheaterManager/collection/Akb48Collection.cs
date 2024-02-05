@@ -82,7 +82,8 @@ namespace WpfTheaterManager.collection
                         if (month > 0 && month != data.TheDate.Month)
                             return false;
                     }
-                    if (data.Member.IndexOf(targetWord) >= 0)
+                    if (data.Member.IndexOf(targetWord) >= 0
+                        || data.Title.IndexOf(targetWord) >= 0)
                         return true;
                     else
                         return false;

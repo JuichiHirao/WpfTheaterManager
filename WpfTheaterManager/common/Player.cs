@@ -28,7 +28,7 @@ namespace WpfTheaterManager.common
         {
             string executePathname = "";
 
-            List<string> listPath = new List<string>{ "D:\\DATA\\Downloads\\AKB48", "F:\\AKB48公演"};
+            List<string> listPath = new List<string>{ "H:\\AKB48公演2022", "G:\\AKB48公演2020", "F:\\AKB48公演"};
 
             foreach(string path in listPath)
             {

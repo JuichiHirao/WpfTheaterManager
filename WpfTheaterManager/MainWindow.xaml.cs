@@ -81,8 +81,8 @@ namespace WpfTheaterManager
             TxtbDetailTheDate.Text = data.TheDate.ToString("yyyy/MM/dd HH:mm");
             TxtDetailMember.Text = data.Member.Replace("<br>","\n");
             //TxtDetailMember.NavigateToString(data.Member);
-            TxtDetailMemo.Text = data.Memo;
-            TxtDetailMemo2.Text = data.Memo2;
+            TxtDetailMemo.Text = data.Memo.Replace("<br>", "\n"); ;
+            TxtDetailMemo2.Text = data.Memo2.Replace("<br>", "\n"); ;
             TxtDetailFilename.Text = data.Filename;
 
             CmbDetailRating1.SelectedValue = data.Rating1;
